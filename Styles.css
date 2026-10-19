@@ -99,7 +99,7 @@ main {
             rgba(0, 0, 0, 0.25),
             rgba(0, 0, 0, 0.6)
         ),
-        url("japan.jpg");
+     url("images/japan.jpg");
     background-position: center;
     background-size: cover;
 }
