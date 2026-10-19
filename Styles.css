@@ -1,0 +1,263 @@
+/* General layout */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #e6e5e1;
+}
+
+body {
+    width: 92%;
+    margin: 3% auto;
+    color: #242720;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    padding: 2% 4%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: -0.04em;
+}
+
+header h1 span {
+    color: #657044;
+}
+
+header p {
+    margin: 0;
+    color: #66695f;
+    font-size: 0.8em;
+    letter-spacing: 0.12em;
+}
+
+/* Navigation */
+nav {
+    margin: 0 3%;
+    border-top: 1px solid #e5e7df;
+    border-bottom: 1px solid #e5e7df;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+}
+
+nav a {
+    display: block;
+    padding: 1em 2%;
+    color: #34392c;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+nav a:hover,
+nav a:focus,
+nav a[aria-current="page"] {
+    color: #ffffff;
+    background-color: #414d32;
+}
+
+/* Main area */
+main {
+    width: 100%;
+    padding: 2% 3% 4%;
+}
+
+/* Large scenic banner */
+.hero {
+    padding: 8% 5%;
+    border-radius: 24px;
+    color: #ffffff;
+    background-color: #414d32;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("images/japan.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h2 {
+    margin: 0 0 3%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5em, 7vw, 7em);
+    font-weight: normal;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.hero p {
+    margin-bottom: 5%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    color: #242720;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #e5e9d9;
+}
+
+/* Book-style fluid columns */
+.columns {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.columns::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#welcome {
+    float: left;
+    width: 62%;
+    padding: 1% 3% 1% 1%;
+}
+
+aside {
+    float: right;
+    width: 35%;
+    padding: 3%;
+    border: 1px solid #e4e7dc;
+    border-radius: 18px;
+    background-color: #f3f5ee;
+}
+
+.columns h2 {
+    margin: 0 0 5%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.columns h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+.eyebrow {
+    margin-top: 0;
+    color: #596343;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside li {
+    border-bottom: 1px solid #dce1d2;
+}
+
+aside li:last-child {
+    border-bottom: 0;
+}
+
+aside a {
+    display: block;
+    padding: 1em 0;
+    color: #343e29;
+    text-decoration: none;
+}
+
+aside a:hover,
+aside a:focus {
+    text-decoration: underline;
+}
+
+/* Scalable content images */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    padding: 2%;
+    border-top: 1px solid #e5e7df;
+    color: #66695f;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 0.3em 0;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 600px) {
+    nav li {
+        width: 50%;
+    }
+
+    .hero {
+        padding: 12% 6%;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    #welcome,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    #welcome {
+        padding: 4% 1%;
+    }
+
+    aside {
+        margin-top: 4%;
+        padding: 6%;
+    }
+}
