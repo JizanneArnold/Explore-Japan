@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Japan Diary travel notes, preparation reminders, and a practice trip planning form.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Japan Diary | Travel Notes</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Japan Diary<span>.</span></h1>
+        <p>A collection of places, little moments, and memories.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Places I Visited</a></li>
+            <li><a href="food.html">Food Diaries</a></li>
+            <li>
+                <a href="tips.html" aria-current="page">Travel Notes</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="columns">
+            <section id="welcome">
+               <p class="eyebrow">A FEW NOTES FOR THE ROAD</p>
+                <h2>Travel Notes</h2>
+                <h3>Your suitcase deserves breathing room</h3>
+<p>
+    If you plan to bring home clothes, souvenirs, or a suspicious
+    number of snacks, do not pack your suitcase to its limit!
+    Leave room for your finds. Your future self should not
+    have to sit on the suitcase to close it. Check your airline's
+    baggage limits before deciding that another bag is the answer.
+</p>
+
+<h3>Cute shoes? Yes. Blisters? No.</h3>
+<p>
+    Bring comfortable shoes that you have already broken in.
+    A sightseeing day can turn into a walking marathon,
+    and your feet did not sign up to suffer for the outfit.
+    Pack for the weather and give yourself permission to
+    take a cafe break.
+</p>
+
+<h3>Make plans, leave room for plot twists</h3>
+<p>
+    Your itinerary is a guide, not your boss. Pick a few
+    must-see places, but leave room to wander. Do not let
+    TikTok plan every meal! Step away from the famous spots
+    and explore quieter streets or less popular places to
+    dine. There is so much amazing food to discover beyond
+    the viral recommendations. A little restaurant you
+    stumble upon might become your favorite memory.
+    Check opening hours, stay curious, and give yourself
+    time to enjoy the unexpected.
+</p>
+
+<h3>Low battery is not a personality trait</h3>
+<p>
+    Charge your phone before heading out and consider bringing
+    a portable charger. Save your accommodation details and
+    important directions offline. Being lost is less charming
+    when your phone is at one percent.
+</p>
+
+<h3>Be curious, be kind</h3>
+<p>
+    Follow posted rules, keep shared spaces tidy, and be
+    considerate of the people around you. Ask before taking
+    someone's photo, and check food ingredients directly
+    with restaurants if you have dietary needs.
+    Good manners belong in every carry-on.
+</p>
+  <h3>Tap, ride, snack, repeat</h3>
+<p>
+    A train ride and a convenience store snack run?
+    Suica can help with both! If you have a compatible
+    iPhone, the Welcome Suica Mobile app lets you set up
+    and top up a digital card. Use it on participating
+    trains and buses, and at convenience stores that
+    accept Suica. Look for the Suica or compatible IC logo,
+    and check your balance before heading out.
+    Your snack budget might disappear faster than you think!
+</p>
+<p>
+    The Welcome Suica Mobile app is for compatible iPhones.
+    If your phone is not supported, check physical
+    Welcome Suica card options instead.
+</p>              
+
+                <h2>Your next chapter</h2>
+                <p id="form-note">
+                    Try this practice trip planning form.
+                    It is a class demonstration and does not
+                    create a booking or send an email.
+                    Use sample information: submitting places
+                    your entries in the page URL.
+                </p>
+
+                <form action="tips.html" method="get"
+                      aria-describedby="form-note">
+                    <fieldset>
+                        <legend>Plan a little adventure</legend>
+
+                        <label for="traveler-name">
+                            Name (required)
+                        </label>
+                        <input type="text"
+                               id="traveler-name"
+                               name="traveler_name"
+                               autocomplete="name"
+                               required>
+
+                        <label for="traveler-email">
+                            Email (required)
+                        </label>
+                        <input type="email"
+                               id="traveler-email"
+                               name="traveler_email"
+                               autocomplete="email"
+                               required>
+
+                        <label for="destination">
+                            Preferred destination (required)
+                        </label>
+                        <select id="destination"
+                                name="destination"
+                                required>
+                            <option value="">Choose a destination</option>
+                            <option value="tokyo">Tokyo</option>
+                            <option value="kyoto">Kyoto</option>
+                            <option value="osaka">Osaka</option>
+                            <option value="nara">Nara</option>
+                        </select>
+
+                        <label for="travel-date">
+                            Planned travel date
+                        </label>
+                        <input type="date"
+                               id="travel-date"
+                               name="travel_date">
+
+                        <label for="travelers">
+                            Number of travelers
+                        </label>
+                        <input type="number"
+                               id="travelers"
+                               name="travelers"
+                               min="1"
+                               max="20"
+                               value="1">
+
+                        <label for="interests">
+                            What would you love to experience?
+                        </label>
+                        <textarea id="interests"
+                                  name="interests"
+                                  rows="5"
+                                  placeholder="Food, nature, shopping, or a quiet afternoon"></textarea>
+
+                        <div class="form-buttons">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <aside>
+                <p class="eyebrow">A LITTLE CHECKLIST</p>
+                <h2>Before you leave</h2>
+                <ul>
+                    <li>Check current travel requirements.</li>
+                    <li>Save accommodation details.</li>
+                    <li>Research transportation.</li>
+                    <li>Check the weather.</li>
+                    <li>Pack comfortable shoes.</li>
+                    <li>Plan your budget.</li>
+                    <li>Leave room for new memories.</li>
+                </ul>
+
+                <p>
+                    Start with a little inspiration
+                    from the photo diary.
+                </p>
+                <a href="destinations.html">
+                    Explore the places &rarr;
+                </a>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Japan Diary</p>
+        <p>A personal collection of travel memories.</p>
+        <p>Last updated: October 24, 2026</p>
+    </footer>
+</body>
+</html>

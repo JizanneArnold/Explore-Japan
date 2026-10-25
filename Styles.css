@@ -260,4 +260,140 @@ footer p {
         margin-top: 4%;
         padding: 6%;
     }
+}/* Trip planning form */
+form {
+    margin-top: 5%;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 5%;
+    border: 1px solid #c8cebd;
+    border-radius: 16px;
+}
+
+legend {
+    padding: 0 0.5em;
+    color: #414d32;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #929b83;
+    border-radius: 6px;
+    color: #242720;
+    background-color: #ffffff;
+    font: inherit;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #414d32;
+    outline-offset: 2px;
+}
+
+.form-buttons {
+    margin-top: 1.5em;
+}
+
+.form-buttons button {
+    margin: 0.4em 0.5em 0 0;
+    padding: 0.8em 1.5em;
+    border: 1px solid #414d32;
+    border-radius: 24px;
+    color: #ffffff;
+    background-color: #414d32;
+    font: inherit;
+    cursor: pointer;
+}
+
+.form-buttons button[type="reset"] {
+    color: #414d32;
+    background-color: #ffffff;
+}
+
+.form-buttons button:hover {
+    color: #ffffff;
+    background-color: #28321e;
+}
+
+.form-buttons button:focus {
+    outline: 2px solid #414d32;
+    outline-offset: 3px;
+}
+
+/* Fluid image gallery */
+.gallery-grid::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.gallery {
+    float: left;
+    width: 48%;
+    margin: 0 4% 4% 0;
+    border: 1px solid #c8cebd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.gallery:nth-child(even) {
+    margin-right: 0;
+}
+
+.gallery:hover {
+    border-color: #414d32;
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery a:focus {
+    outline: 3px solid #414d32;
+    outline-offset: -3px;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.desc {
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 6%;
+    }
 }
