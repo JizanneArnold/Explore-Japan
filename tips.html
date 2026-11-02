@@ -6,7 +6,11 @@
           content="Japan Diary travel notes, preparation reminders, and a practice trip planning form.">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+
     <title>Japan Diary | Travel Notes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
     <link rel="stylesheet" href="Styles.css">
 </head>
 
@@ -30,71 +34,184 @@
     <main>
         <div class="columns">
             <section id="welcome">
-               <p class="eyebrow">A FEW NOTES FOR THE ROAD</p>
+                <p class="eyebrow">A FEW NOTES FOR THE ROAD</p>
                 <h2>Travel Notes</h2>
+
                 <h3>Your suitcase deserves breathing room</h3>
-<p>
-    If you plan to bring home clothes, souvenirs, or a suspicious
-    number of snacks, do not pack your suitcase to its limit!
-    Leave room for your finds. Your future self should not
-    have to sit on the suitcase to close it. Check your airline's
-    baggage limits before deciding that another bag is the answer.
-</p>
+                <p>
+                    If you plan to bring home clothes, souvenirs,
+                    or a suspicious number of snacks, do not pack
+                    your suitcase to its limit! Leave room for
+                    your finds. Your future self should not have
+                    to sit on the suitcase to close it. Check your
+                    airline's baggage limits before deciding that
+                    another bag is the answer.
+                </p>
 
-<h3>Cute shoes? Yes. Blisters? No.</h3>
-<p>
-    Bring comfortable shoes that you have already broken in.
-    A sightseeing day can turn into a walking marathon,
-    and your feet did not sign up to suffer for the outfit.
-    Pack for the weather and give yourself permission to
-    take a cafe break.
-</p>
+                <h3>Cute shoes? Yes. Blisters? No.</h3>
+                <p>
+                    Bring comfortable shoes that you have already
+                    broken in. A sightseeing day can turn into a
+                    walking marathon, and your feet did not sign
+                    up to suffer for the outfit. Pack for the
+                    weather and give yourself permission to take
+                    a cafe break.
+                </p>
 
-<h3>Make plans, leave room for plot twists</h3>
-<p>
-    Your itinerary is a guide, not your boss. Pick a few
-    must-see places, but leave room to wander. Do not let
-    TikTok plan every meal! Step away from the famous spots
-    and explore quieter streets or less popular places to
-    dine. There is so much amazing food to discover beyond
-    the viral recommendations. A little restaurant you
-    stumble upon might become your favorite memory.
-    Check opening hours, stay curious, and give yourself
-    time to enjoy the unexpected.
-</p>
+                <h3>Make plans, leave room for plot twists</h3>
+                <p>
+                    Your itinerary is a guide, not your boss.
+                    Pick a few must-see places, but leave room
+                    to wander. Do not let TikTok plan every meal!
+                    Step away from the famous spots and explore
+                    quieter streets or less popular places to
+                    dine. There is so much amazing food to
+                    discover beyond the viral recommendations.
+                    A little restaurant you stumble upon might
+                    become your favorite memory. Check opening
+                    hours, stay curious, and give yourself time
+                    to enjoy the unexpected.
+                </p>
 
-<h3>Low battery is not a personality trait</h3>
-<p>
-    Charge your phone before heading out and consider bringing
-    a portable charger. Save your accommodation details and
-    important directions offline. Being lost is less charming
-    when your phone is at one percent.
-</p>
+                <h3>Low battery is not a personality trait</h3>
+                <p>
+                    Charge your phone before heading out and
+                    consider bringing a portable charger. Save
+                    your accommodation details and important
+                    directions offline. Being lost is less
+                    charming when your phone is at one percent.
+                </p>
 
-<h3>Be curious, be kind</h3>
-<p>
-    Follow posted rules, keep shared spaces tidy, and be
-    considerate of the people around you. Ask before taking
-    someone's photo, and check food ingredients directly
-    with restaurants if you have dietary needs.
-    Good manners belong in every carry-on.
-</p>
-  <h3>Tap, ride, snack, repeat</h3>
-<p>
-    A train ride and a convenience store snack run?
-    Suica can help with both! If you have a compatible
-    iPhone, the Welcome Suica Mobile app lets you set up
-    and top up a digital card. Use it on participating
-    trains and buses, and at convenience stores that
-    accept Suica. Look for the Suica or compatible IC logo,
-    and check your balance before heading out.
-    Your snack budget might disappear faster than you think!
-</p>
-<p>
-    The Welcome Suica Mobile app is for compatible iPhones.
-    If your phone is not supported, check physical
-    Welcome Suica card options instead.
-</p>              
+                <h3>Be curious, be kind</h3>
+                <p>
+                    Follow posted rules, keep shared spaces tidy,
+                    and be considerate of the people around you.
+                    Ask before taking someone's photo, and check
+                    food ingredients directly with restaurants
+                    if you have dietary needs. Good manners
+                    belong in every carry-on.
+                </p>
+
+                <h3>Tap, ride, snack, repeat</h3>
+                <p>
+                    A train ride and a convenience store snack
+                    run? Suica can help with both! If you have
+                    a compatible iPhone, the Welcome Suica Mobile
+                    app lets you set up and top up a digital card.
+                    Use it on participating trains and buses,
+                    and at convenience stores that accept Suica.
+                    Look for the Suica or compatible IC logo,
+                    and check your balance before heading out.
+                    Your snack budget might disappear faster
+                    than you think!
+                </p>
+                <p>
+                    The Welcome Suica Mobile app is for compatible
+                    iPhones. If your phone is not supported, check
+                    physical Welcome Suica card options instead.
+                </p>
+
+                <section class="diary-faq" aria-labelledby="faq-title">
+                    <p class="eyebrow">A LITTLE TRAVEL CHAT</p>
+                    <h2 id="faq-title">
+                        Before you zip that suitcase
+                    </h2>
+
+                    <div class="accordion" id="travelAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"
+                                id="packing-heading">
+                                <button class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#packing-answer"
+                                        aria-expanded="true"
+                                        aria-controls="packing-answer">
+                                    Should I fill my suitcase
+                                    before leaving?
+                                </button>
+                            </h3>
+
+                            <div id="packing-answer"
+                                    class="accordion-collapse collapse show"
+                                    role="region"
+                                    aria-labelledby="packing-heading"
+                                    data-bs-parent="#travelAccordion">
+                                <div class="accordion-body">
+                                    Your souvenir shopping deserves
+                                    some space! Leave room for clothes,
+                                    snacks, and unexpected finds.
+                                    Check your airline's baggage
+                                    allowance before your suitcase
+                                    develops a second identity as an
+                                    overstuffed snack cabinet.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"
+                                id="dining-heading">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#dining-answer"
+                                        aria-expanded="false"
+                                        aria-controls="dining-answer">
+                                    Should every meal come from TikTok?
+                                </button>
+                            </h3>
+
+                           <div id="dining-answer"
+                                    class="accordion-collapse collapse"
+                                    role="region"
+                                    aria-labelledby="dining-heading"
+                                    data-bs-parent="#travelAccordion">
+                                <div class="accordion-body">
+                                    Give your saved videos a little
+                                    break. Explore quieter streets
+                                    and less popular places to dine.
+                                    Your next favorite meal might
+                                    come from somewhere you discovered
+                                    yourself. Check the menu, follow
+                                    your curiosity, and leave room
+                                    for dessert.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"
+                                id="schedule-heading">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#schedule-answer"
+                                        aria-expanded="false"
+                                        aria-controls="schedule-answer">
+                                    Do I need to schedule every minute?
+                                </button>
+                            </h3>
+
+                             <div id="schedule-answer"
+                                    class="accordion-collapse collapse"
+                                    role="region"
+                                    aria-labelledby="schedule-heading"
+                                    data-bs-parent="#travelAccordion">
+                                <div class="accordion-body">
+                                    Your itinerary is a guide,
+                                    not your boss. Choose a few
+                                    priorities, check opening hours,
+                                    and leave space for wandering,
+                                    resting, and unexpected
+                                    discoveries. A cafe break
+                                    absolutely counts as part
+                                    of the adventure.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <h2>Your next chapter</h2>
                 <p id="form-note">
@@ -105,7 +222,8 @@
                     your entries in the page URL.
                 </p>
 
-                <form action="tips.html" method="get"
+                <form action="tips.html"
+                      method="get"
                       aria-describedby="form-note">
                     <fieldset>
                         <legend>Plan a little adventure</legend>
@@ -177,6 +295,7 @@
             <aside>
                 <p class="eyebrow">A LITTLE CHECKLIST</p>
                 <h2>Before you leave</h2>
+
                 <ul>
                     <li>Check current travel requirements.</li>
                     <li>Save accommodation details.</li>
@@ -191,6 +310,7 @@
                     Start with a little inspiration
                     from the photo diary.
                 </p>
+
                 <a href="destinations.html">
                     Explore the places &rarr;
                 </a>
@@ -203,5 +323,7 @@
         <p>A personal collection of travel memories.</p>
         <p>Last updated: October 24, 2026</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
